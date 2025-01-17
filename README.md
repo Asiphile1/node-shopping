@@ -106,3 +106,10 @@ If an invalid item ID is provided, the API will return a 404 status code with an
 
 The shopping list data is stored in a local JSON file located in the data/shoppingList.json file.
 The API uses the fs module to read and write data to this file.
+
+# screenshots
+![Image](https://github.com/user-attachments/assets/63866357-9e90-4d1c-ac61-287f687c886b)
+
+![Image](https://github.com/user-attachments/assets/d95b4673-09d7-4b97-9bf0-1cdbc723425a)
+
+![Image](https://github.com/user-attachments/assets/214c323f-418a-44b3-b3b7-78e8741feff2)
