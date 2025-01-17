@@ -27,7 +27,7 @@ cd shopping-list-api
 This project doesn’t have any external dependencies, but if you need to add more later, use the following command:
 
 ```bash
-Copy
+
 
 npm init -y
 ```
@@ -36,7 +36,7 @@ npm init -y
 To run the server, use the following command:
 
 ```bash
-Copy
+
 
 node api.js
 ```
