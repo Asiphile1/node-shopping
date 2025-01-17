@@ -57,8 +57,7 @@ You can test the API using Postman or any API testing tool.
 * Request Body:
 
 ```json
-Copy
-Edit
+
 {
   "name": "Item Name"
 }
@@ -72,8 +71,7 @@ Description: Adds a new item to the shopping list. The item must include a name.
 * Request Body:
   
 ```json
-Copy
-Edit
+
 {
   "name": "Updated Item Name"
 }
@@ -90,8 +88,7 @@ Description: Updates an existing item in the shopping list by its ID.
 If a request is made with invalid data (e.g., a missing name field), the API will return a 400 status code with an error message:
 
 ```json
-Copy
-Edit
+
 {
   "error": "Item must have a name"
 }
@@ -99,8 +96,7 @@ Edit
 If an invalid item ID is provided, the API will return a 404 status code with an error message:
 
 ```json
-Copy
-Edit
+
 {
   "error": "Item not found"
 }
