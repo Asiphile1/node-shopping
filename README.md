@@ -20,3 +20,93 @@ Before running the application, make sure you have the following installed:
 ```bash
 git clone (https://github.com/Asiphile1/node-shopping/tree/main)
 cd shopping-list-api
+```
+
+
+## 2. Install Dependencies
+This project doesn’t have any external dependencies, but if you need to add more later, use the following command:
+
+```bash
+Copy
+
+npm init -y
+```
+
+## 3. Run the Server
+To run the server, use the following command:
+
+```bash
+Copy
+
+node api.js
+```
+The server will be available at http://localhost:3000.
+
+## 4. Test the API Endpoints 
+You can test the API using Postman or any API testing tool.
+
+## GET /shopping-list
+* Method: GET
+* URL: http://localhost:3000/shopping-list
+* Description: Retrieves all items in the shopping list.
+
+## POST /shopping-list
+
+* Method: POST
+* URL: http://localhost:3000/shopping-list
+* Request Body:
+
+```json
+Copy
+Edit
+{
+  "name": "Item Name"
+}
+```
+Description: Adds a new item to the shopping list. The item must include a name.
+
+## PUT /shopping-list/{id}
+
+* Method: PUT
+* URL: http://localhost:3000/shopping-list/{id}
+* Request Body:
+  
+```json
+Copy
+Edit
+{
+  "name": "Updated Item Name"
+}
+```
+Description: Updates an existing item in the shopping list by its ID.
+
+## DELETE /shopping-list/{id}
+
+* Method: DELETE
+* URL: http://localhost:3000/shopping-list/{id}
+* Description: Deletes an item from the shopping list by its ID.
+
+## 5. Error Handling
+If a request is made with invalid data (e.g., a missing name field), the API will return a 400 status code with an error message:
+
+```json
+Copy
+Edit
+{
+  "error": "Item must have a name"
+}
+```
+If an invalid item ID is provided, the API will return a 404 status code with an error message:
+
+```json
+Copy
+Edit
+{
+  "error": "Item not found"
+}
+```
+
+## 6. Data Storage
+
+The shopping list data is stored in a local JSON file located in the data/shoppingList.json file.
+The API uses the fs module to read and write data to this file.
