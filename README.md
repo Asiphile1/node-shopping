@@ -18,5 +18,5 @@ Before running the application, make sure you have the following installed:
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/yourusername/shopping-list-api.git](https://github.com/Asiphile1/node-shopping/tree/main)
+git clone (https://github.com/Asiphile1/node-shopping/tree/main)
 cd shopping-list-api
